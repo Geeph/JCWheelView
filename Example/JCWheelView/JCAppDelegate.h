@@ -2,7 +2,7 @@
 //  JCAppDelegate.h
 //  JCWheelView
 //
-//  Created by CocoaPods on 06/27/2015.
+//  Created by lijingcheng on 06/27/2015.
 //  Copyright (c) 2014 lijingcheng. All rights reserved.
 //
 

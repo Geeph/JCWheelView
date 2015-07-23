@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D3CE2DA061327BF24B02FC3 /* Pods_JCWheelView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140D512224801C68EC71D316 /* Pods_JCWheelView_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		545E3E200939260979F3B5EB /* libPods-JCWheelView_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 966F854437BAB8C0CDF49D12 /* libPods-JCWheelView_Example.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,7 +22,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		94A82C80F68A44A967506E9C /* Pods_JCWheelView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560A0838882C4DB34C0DD0DB /* Pods_JCWheelView_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		DE854C4ED81DA2FB8D08F478 /* libPods-JCWheelView_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5073A0D35C3C2AEDE48DB6B2 /* libPods-JCWheelView_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +38,9 @@
 /* Begin PBXFileReference section */
 		00CC92766986D2C9089F788F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		0A0212CE1D490A0465980275 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		140D512224801C68EC71D316 /* Pods_JCWheelView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCWheelView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF426E382651D0043C9E03E /* JCWheelView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JCWheelView.podspec; path = ../JCWheelView.podspec; sourceTree = "<group>"; };
-		560A0838882C4DB34C0DD0DB /* Pods_JCWheelView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCWheelView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6003F58A195388D20070C39A /* JCWheelView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = JCWheelView.app; path = JCWheelView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5073A0D35C3C2AEDE48DB6B2 /* libPods-JCWheelView_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCWheelView_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* JCWheelView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCWheelView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -54,7 +53,7 @@
 		6003F5A5195388D20070C39A /* JCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* JCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = JCWheelView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* JCWheelView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCWheelView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -62,6 +61,7 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		85497A335A9D0CACF5E801DE /* Pods-JCWheelView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCWheelView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCWheelView_Tests/Pods-JCWheelView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		966F854437BAB8C0CDF49D12 /* libPods-JCWheelView_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCWheelView_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3026F2CC79997F095AF3893 /* Pods-JCWheelView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCWheelView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCWheelView_Tests/Pods-JCWheelView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EAEE189FBAABC63FFC6691DD /* Pods-JCWheelView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCWheelView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCWheelView_Example/Pods-JCWheelView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EBB9A98FBDC1A427D425EF4A /* Pods-JCWheelView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCWheelView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCWheelView_Example/Pods-JCWheelView_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				1D3CE2DA061327BF24B02FC3 /* Pods_JCWheelView_Example.framework in Frameworks */,
+				545E3E200939260979F3B5EB /* libPods-JCWheelView_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				94A82C80F68A44A967506E9C /* Pods_JCWheelView_Tests.framework in Frameworks */,
+				DE854C4ED81DA2FB8D08F478 /* libPods-JCWheelView_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,8 +108,8 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* JCWheelView.app */,
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F58A195388D20070C39A /* JCWheelView_Example.app */,
+				6003F5AE195388D20070C39A /* JCWheelView_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,8 +121,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				140D512224801C68EC71D316 /* Pods_JCWheelView_Example.framework */,
-				560A0838882C4DB34C0DD0DB /* Pods_JCWheelView_Tests.framework */,
+				966F854437BAB8C0CDF49D12 /* libPods-JCWheelView_Example.a */,
+				5073A0D35C3C2AEDE48DB6B2 /* libPods-JCWheelView_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,10 +132,8 @@
 			children = (
 				6003F59C195388D20070C39A /* JCAppDelegate.h */,
 				6003F59D195388D20070C39A /* JCAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* JCViewController.h */,
 				6003F5A6195388D20070C39A /* JCViewController.m */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for JCWheelView";
@@ -145,10 +143,12 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				6003F59B195388D20070C39A /* JCWheelView-Prefix.pch */,
 				6003F595195388D20070C39A /* JCWheelView-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
-				6003F59B195388D20070C39A /* JCWheelView-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -204,7 +204,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				544A50273B66BF3887B4313C /* Embed Pods Frameworks */,
 				C0A22DC65AEB9E9FBD2EE47B /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -213,7 +212,7 @@
 			);
 			name = JCWheelView_Example;
 			productName = JCWheelView;
-			productReference = 6003F58A195388D20070C39A /* JCWheelView.app */;
+			productReference = 6003F58A195388D20070C39A /* JCWheelView_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* JCWheelView_Tests */ = {
@@ -224,7 +223,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				3BC1E685FEDE904794AE4D7E /* Embed Pods Frameworks */,
 				FF4EB3507D8C78AF0C72B4B9 /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -234,7 +232,7 @@
 			);
 			name = JCWheelView_Tests;
 			productName = JCWheelViewTests;
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* JCWheelView_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -293,36 +291,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3BC1E685FEDE904794AE4D7E /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCWheelView_Tests/Pods-JCWheelView_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		544A50273B66BF3887B4313C /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCWheelView_Example/Pods-JCWheelView_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7CC4572B349A12C0F7E363E5 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
