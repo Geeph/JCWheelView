@@ -8,7 +8,6 @@
 
 #import "JCViewController.h"
 #import "JCWheelView.h"
-#import "JCWheelCenterView.h"
 
 #define RGB(r, g, b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1.0f]
 
@@ -33,8 +32,6 @@
                     RGB(51, 155, 247), RGB(122, 115, 232), RGB(218, 84, 216), RGB(232, 73, 148)];
     
     self.wheelView.delegate = self;
-//    self.wheelView.image = [UIImage imageNamed:@"img_wheel_bg"];
-//    self.wheelView.centerView.image = [UIImage imageNamed:@"img_wheel_center_2"];
     
     self.colorView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 88, 88)];
     self.colorView.layer.cornerRadius = self.colorView.frame.size.width/2;

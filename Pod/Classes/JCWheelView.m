@@ -11,11 +11,8 @@
 #import "JCWheelCenterView.h"
 #import "JCRotateGestureRecognizer.h"
 
-@interface JCWheelView ()
-
-@end
-
 @implementation JCWheelView
+@synthesize baseWheelItem = _baseWheelItem;
 @synthesize numberOfItems = _numberOfItems;
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
@@ -68,28 +65,22 @@
         
         [self addSubview:item];
     }
+    
+    self.baseWheelItem.frame = CGRectOffset(self.baseWheelItem.frame, self.center.x - self.baseWheelItem.frame.size.width/2, self.frame.origin.y);
+    [self.superview insertSubview:self.baseWheelItem aboveSubview:self];
 
     self.centerView.center = CGPointMake(CGRectGetMinX(self.frame) + radius, CGRectGetMinY(self.frame) + radius);
     [self.superview insertSubview:self.centerView aboveSubview:self];
-        
-    
-    
-    self.xxx = CGPointMake(self.centerView.center.x, self.centerView.center.y-self.centerView.frame.size.height/2);
-    NSLog(@"_____%@",NSStringFromCGPoint(self.xxx));
-    
-    UIView *test = [[UIView alloc] initWithFrame:CGRectMake(self.xxx.x, self.xxx.y, 5, 5)];
-    test.backgroundColor = [UIColor blackColor];
-    [self.superview insertSubview:test aboveSubview:self];
 }
 
 - (void)handleRotateGesture:(JCRotateGestureRecognizer *)rotateGR
 {
     if (rotateGR.state == UIGestureRecognizerStateChanged) {//rotate
-        self.transform = CGAffineTransformRotate(self.transform, rotateGR.rotation);
+        self.transform = CGAffineTransformRotate(self.transform, rotateGR.degrees);
     }
     else if(rotateGR.state == UIGestureRecognizerStateEnded) {//tap
         [UIView animateWithDuration:0.3f animations:^{
-            self.transform = CGAffineTransformRotate(self.transform, rotateGR.rotation);
+            self.transform = CGAffineTransformRotate(self.transform, rotateGR.degrees);
         } completion:^(BOOL finished) {
             if ([self.delegate respondsToSelector:@selector(wheelView:didSelectItemAtIndex:)]) {
                 [self.delegate wheelView:self didSelectItemAtIndex:rotateGR.seletedIndex];
@@ -99,6 +90,15 @@
 }
 
 #pragma mark -
+
+- (JCWheelItem *)baseWheelItem
+{
+    if (!_baseWheelItem) {
+        _baseWheelItem = [[JCWheelItem alloc] initWithWheelView:self];
+    }
+    
+    return _baseWheelItem;
+}
 
 - (JCWheelCenterView *)centerView
 {

@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) UIImage *image;
 
-@property (nonatomic, assign) CGRect touchEeffectiveRect;
+//Area outside the effective range can respond to events
+@property (nonatomic, assign) CGRect effectiveRect;
 
 @end

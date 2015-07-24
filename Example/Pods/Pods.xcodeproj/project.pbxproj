@@ -1,0 +1,912 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D49672A616F263352C2BAAE /* JCRotateGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C5C2765B18C0EEAAB4786E /* JCRotateGestureRecognizer.h */; };
+		166AB5DD41FD7B5A0DC9700E /* wheel_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00BB27F206B4EE83E4C3E73A /* wheel_bg@2x.png */; };
+		180EC0D8302015219BCB723F /* JCWheelItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 628FC873ADA9BAE65BDCB5C7 /* JCWheelItem.h */; };
+		26B918359D66CE690FDCDB08 /* JCRotateGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C5C2765B18C0EEAAB4786E /* JCRotateGestureRecognizer.h */; };
+		314B96B79FA029F9E1E523F3 /* JCWheelView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9168EABF15FCC31B22AAEA04 /* JCWheelView.h */; };
+		333DA0748A8C1CCF53B5F045 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FB32ACA6712CD8F206F521 /* Foundation.framework */; };
+		3A845A6C45475C3E473BCF84 /* JCWheelCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1069D09F7579ED819FCFA172 /* JCWheelCenterView.m */; };
+		3D1EA3EAF22BB00150E2BFB3 /* wheel_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14D2CE51C44D50D247D3E9DE /* wheel_arrow@2x.png */; };
+		3F85500BC9898568C7C20CB0 /* Pods-JCWheelView_Example-JCWheelView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 680FBB3200238322B80B6070 /* Pods-JCWheelView_Example-JCWheelView-dummy.m */; };
+		529AFB3527792290EBFBA850 /* JCWheelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BCB8E5A1BC68D05BDB16E /* JCWheelView.m */; };
+		54FACA2451C4CB618307014D /* JCRotateGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = D49850E34C379C87DA3F8F59 /* JCRotateGestureRecognizer.m */; };
+		58FE9C99246947D4AF105B7A /* wheel_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00BB27F206B4EE83E4C3E73A /* wheel_bg@2x.png */; };
+		746A3A279F630945C2E43760 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FB32ACA6712CD8F206F521 /* Foundation.framework */; };
+		7ABB692CF6D02C0B8EB7F874 /* wheel_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14D2CE51C44D50D247D3E9DE /* wheel_arrow@2x.png */; };
+		89B35052D9204EAB2F79C186 /* JCWheelCenterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3425F7FB6D48F627CD21756A /* JCWheelCenterView.h */; };
+		8EDD22B2393AA9A906479ADC /* JCWheelCenterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3425F7FB6D48F627CD21756A /* JCWheelCenterView.h */; };
+		9D4B261D9F63FF7D0FD15766 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FB32ACA6712CD8F206F521 /* Foundation.framework */; };
+		B23FF52F921952687CEDA6A9 /* JCWheelItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 628FC873ADA9BAE65BDCB5C7 /* JCWheelItem.h */; };
+		B88379CC3B6234FEC9FB10A4 /* JCRotateGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = D49850E34C379C87DA3F8F59 /* JCRotateGestureRecognizer.m */; };
+		BFE305E02A8DCA09F981C1BE /* Pods-JCWheelView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC3C51566AB18EF172539AC /* Pods-JCWheelView_Tests-dummy.m */; };
+		CCA25A6B84CF6863986B91EF /* Pods-JCWheelView_Tests-JCWheelView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4491892FA1922664403501A /* Pods-JCWheelView_Tests-JCWheelView-dummy.m */; };
+		CDFF422D9F9A4374B2EBAF5D /* Pods-JCWheelView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 111D7A0D0AC3AF82E944A60D /* Pods-JCWheelView_Example-dummy.m */; };
+		D4357A03C63A9BE5CC4ACC19 /* JCWheelView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9168EABF15FCC31B22AAEA04 /* JCWheelView.h */; };
+		D58970D8385607324E0AB104 /* JCWheelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BCB8E5A1BC68D05BDB16E /* JCWheelView.m */; };
+		D8F94749AB3A360C4016548B /* JCWheelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCA5F15C70678F0CB2AA417 /* JCWheelItem.m */; };
+		DA2CE20E3057FCBD417A8580 /* JCWheelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCA5F15C70678F0CB2AA417 /* JCWheelItem.m */; };
+		ECC14BBD7D52C4E38DC13C64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FB32ACA6712CD8F206F521 /* Foundation.framework */; };
+		F38810FCA6ADE51CF5510205 /* JCWheelCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1069D09F7579ED819FCFA172 /* JCWheelCenterView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7405128511DE12B42ECCD367 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF1ABC73E252832A7D7E2734 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CB0D37BCC43416F527194A8;
+			remoteInfo = "Pods-JCWheelView_Example-JCWheelView-JCWheelView";
+		};
+		865CEC9E40ABE40FDAF084C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF1ABC73E252832A7D7E2734 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6EB17D5F84F93AF8132BDB6;
+			remoteInfo = "Pods-JCWheelView_Tests-JCWheelView-JCWheelView";
+		};
+		98EFCF40E2E0D223456E0BFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF1ABC73E252832A7D7E2734 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D908A73C09AC86D0D91A4D3;
+			remoteInfo = "Pods-JCWheelView_Tests-JCWheelView";
+		};
+		AF8EB3D15B8C56832385DD9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF1ABC73E252832A7D7E2734 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AF2E751930A2C255A895A71;
+			remoteInfo = "Pods-JCWheelView_Example-JCWheelView";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		001079BF6453E704861E3CFD /* Pods-JCWheelView_Example-JCWheelView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCWheelView_Example-JCWheelView-prefix.pch"; sourceTree = "<group>"; };
+		00BB27F206B4EE83E4C3E73A /* wheel_bg@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "wheel_bg@2x.png"; sourceTree = "<group>"; };
+		026E057F1ADD244CC63A6D25 /* libPods-JCWheelView_Tests-JCWheelView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCWheelView_Tests-JCWheelView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B7681A28D41032FF6B50595 /* Pods-JCWheelView_Tests-JCWheelView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCWheelView_Tests-JCWheelView-Private.xcconfig"; path = "../Pods-JCWheelView_Tests-JCWheelView/Pods-JCWheelView_Tests-JCWheelView-Private.xcconfig"; sourceTree = "<group>"; };
+		0FC4D50A2509C8F9FDF6F6BF /* Pods-JCWheelView_Example-JCWheelView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCWheelView_Example-JCWheelView.xcconfig"; sourceTree = "<group>"; };
+		1069D09F7579ED819FCFA172 /* JCWheelCenterView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JCWheelCenterView.m; sourceTree = "<group>"; };
+		111D7A0D0AC3AF82E944A60D /* Pods-JCWheelView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JCWheelView_Example-dummy.m"; sourceTree = "<group>"; };
+		1147AC51916E7168E154F437 /* JCWheelView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCWheelView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		1237597588C669ED9A74B1D4 /* Pods-JCWheelView_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCWheelView_Example-environment.h"; sourceTree = "<group>"; };
+		14D2CE51C44D50D247D3E9DE /* wheel_arrow@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "wheel_arrow@2x.png"; sourceTree = "<group>"; };
+		184BCB8E5A1BC68D05BDB16E /* JCWheelView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JCWheelView.m; sourceTree = "<group>"; };
+		2A88D5F56542C4D2A330D993 /* Pods-JCWheelView_Example-JCWheelView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCWheelView_Example-JCWheelView-Private.xcconfig"; sourceTree = "<group>"; };
+		330B4EC1C06FDB1B2B66A8B8 /* Pods-JCWheelView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JCWheelView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3425F7FB6D48F627CD21756A /* JCWheelCenterView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JCWheelCenterView.h; sourceTree = "<group>"; };
+		342F7B107FAC632BF9CBA34F /* Pods-JCWheelView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCWheelView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4DBE06899EFE4B7BC3FB0A81 /* Pods-JCWheelView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCWheelView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		57C56A132E9EA3FAF6375A97 /* Pods-JCWheelView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCWheelView_Example-resources.sh"; sourceTree = "<group>"; };
+		5C302F47A48779B6F5B3ACF7 /* JCWheelView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCWheelView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		628FC873ADA9BAE65BDCB5C7 /* JCWheelItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JCWheelItem.h; sourceTree = "<group>"; };
+		680FBB3200238322B80B6070 /* Pods-JCWheelView_Example-JCWheelView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JCWheelView_Example-JCWheelView-dummy.m"; sourceTree = "<group>"; };
+		69246E74D61166A9FC4E455C /* libPods-JCWheelView_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCWheelView_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B8AEAFB88B5586452F0A91D /* Pods-JCWheelView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCWheelView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6EFB086D9EC4C9DB75DE9869 /* Pods-JCWheelView_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCWheelView_Tests-environment.h"; sourceTree = "<group>"; };
+		74B4B15209E41004BCBF7A3C /* Pods-JCWheelView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JCWheelView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		87E8972472B818FB112DCA6E /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		89E31D7F0768CDEF0682FD88 /* Pods-JCWheelView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCWheelView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		907E2941A72374C528A6B4E9 /* Pods-JCWheelView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JCWheelView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9168EABF15FCC31B22AAEA04 /* JCWheelView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JCWheelView.h; sourceTree = "<group>"; };
+		91EB0F8DDFB04B1660E82252 /* libPods-JCWheelView_Example-JCWheelView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCWheelView_Example-JCWheelView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9340687C7BD04F74AB4FDBC2 /* libPods-JCWheelView_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCWheelView_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5CF771D16DCA905F93EF104 /* Pods-JCWheelView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCWheelView_Tests-resources.sh"; sourceTree = "<group>"; };
+		CFC3C51566AB18EF172539AC /* Pods-JCWheelView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JCWheelView_Tests-dummy.m"; sourceTree = "<group>"; };
+		D49850E34C379C87DA3F8F59 /* JCRotateGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JCRotateGestureRecognizer.m; sourceTree = "<group>"; };
+		D8C5C2765B18C0EEAAB4786E /* JCRotateGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JCRotateGestureRecognizer.h; sourceTree = "<group>"; };
+		DEBE9214702FBA2B6DF5372B /* Pods-JCWheelView_Tests-JCWheelView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-JCWheelView_Tests-JCWheelView-prefix.pch"; path = "../Pods-JCWheelView_Tests-JCWheelView/Pods-JCWheelView_Tests-JCWheelView-prefix.pch"; sourceTree = "<group>"; };
+		DF2180CDF6E751BDA527DB1C /* Pods-JCWheelView_Tests-JCWheelView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCWheelView_Tests-JCWheelView.xcconfig"; path = "../Pods-JCWheelView_Tests-JCWheelView/Pods-JCWheelView_Tests-JCWheelView.xcconfig"; sourceTree = "<group>"; };
+		E2FFE0C9E732B121F6BF0CFB /* Pods-JCWheelView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JCWheelView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E4491892FA1922664403501A /* Pods-JCWheelView_Tests-JCWheelView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-JCWheelView_Tests-JCWheelView-dummy.m"; path = "../Pods-JCWheelView_Tests-JCWheelView/Pods-JCWheelView_Tests-JCWheelView-dummy.m"; sourceTree = "<group>"; };
+		F7FB32ACA6712CD8F206F521 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FDCA5F15C70678F0CB2AA417 /* JCWheelItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JCWheelItem.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10874DFE8FF042977BA5A342 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				333DA0748A8C1CCF53B5F045 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3385D6CB25D950F6E20D286A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48F0514C07FA2C5D522EF32E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				746A3A279F630945C2E43760 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92D069EF172DE1CD05CA3CA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0E2E40E088DB0A13CDB37AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC14BBD7D52C4E38DC13C64 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1C6D12DF377280ABBFD835E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D4B261D9F63FF7D0FD15766 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CE3EC599BCC25B301D9D350 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D8C5C2765B18C0EEAAB4786E /* JCRotateGestureRecognizer.h */,
+				D49850E34C379C87DA3F8F59 /* JCRotateGestureRecognizer.m */,
+				3425F7FB6D48F627CD21756A /* JCWheelCenterView.h */,
+				1069D09F7579ED819FCFA172 /* JCWheelCenterView.m */,
+				628FC873ADA9BAE65BDCB5C7 /* JCWheelItem.h */,
+				FDCA5F15C70678F0CB2AA417 /* JCWheelItem.m */,
+				9168EABF15FCC31B22AAEA04 /* JCWheelView.h */,
+				184BCB8E5A1BC68D05BDB16E /* JCWheelView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		35AB05BA33887D0371FE0A8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C23474892C12B07DDC44F39 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B625FC06ED00FF8A4423ABE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				14D2CE51C44D50D247D3E9DE /* wheel_arrow@2x.png */,
+				00BB27F206B4EE83E4C3E73A /* wheel_bg@2x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3C1321DC9875FA6132A2B8F8 = {
+			isa = PBXGroup;
+			children = (
+				87E8972472B818FB112DCA6E /* Podfile */,
+				EDB20E02BA7F53376DE0143A /* Development Pods */,
+				35AB05BA33887D0371FE0A8C /* Frameworks */,
+				52D31D1D13433C2BA73D60E7 /* Products */,
+				F8D6614CFF8DBC7089518517 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		4569F3AA5E04EA80E8E9BE70 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8999AF662D9703F0467005EB /* Pod */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		52D31D1D13433C2BA73D60E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1147AC51916E7168E154F437 /* JCWheelView.bundle */,
+				5C302F47A48779B6F5B3ACF7 /* JCWheelView.bundle */,
+				9340687C7BD04F74AB4FDBC2 /* libPods-JCWheelView_Example.a */,
+				91EB0F8DDFB04B1660E82252 /* libPods-JCWheelView_Example-JCWheelView.a */,
+				69246E74D61166A9FC4E455C /* libPods-JCWheelView_Tests.a */,
+				026E057F1ADD244CC63A6D25 /* libPods-JCWheelView_Tests-JCWheelView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CC4141BDFFFF03E1E55FEA2 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				2CE3EC599BCC25B301D9D350 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		6D41A44F2E622C5055962861 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FC4D50A2509C8F9FDF6F6BF /* Pods-JCWheelView_Example-JCWheelView.xcconfig */,
+				2A88D5F56542C4D2A330D993 /* Pods-JCWheelView_Example-JCWheelView-Private.xcconfig */,
+				680FBB3200238322B80B6070 /* Pods-JCWheelView_Example-JCWheelView-dummy.m */,
+				001079BF6453E704861E3CFD /* Pods-JCWheelView_Example-JCWheelView-prefix.pch */,
+				DF2180CDF6E751BDA527DB1C /* Pods-JCWheelView_Tests-JCWheelView.xcconfig */,
+				0B7681A28D41032FF6B50595 /* Pods-JCWheelView_Tests-JCWheelView-Private.xcconfig */,
+				E4491892FA1922664403501A /* Pods-JCWheelView_Tests-JCWheelView-dummy.m */,
+				DEBE9214702FBA2B6DF5372B /* Pods-JCWheelView_Tests-JCWheelView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-JCWheelView_Example-JCWheelView";
+			sourceTree = "<group>";
+		};
+		8999AF662D9703F0467005EB /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				3B625FC06ED00FF8A4423ABE /* Assets */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		8D09AF99660F4BC103F47E43 /* JCWheelView */ = {
+			isa = PBXGroup;
+			children = (
+				6CC4141BDFFFF03E1E55FEA2 /* Pod */,
+				4569F3AA5E04EA80E8E9BE70 /* Resources */,
+				6D41A44F2E622C5055962861 /* Support Files */,
+			);
+			name = JCWheelView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		9654B96D7EBE44C7A1686C8B /* Pods-JCWheelView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				74B4B15209E41004BCBF7A3C /* Pods-JCWheelView_Tests-acknowledgements.markdown */,
+				330B4EC1C06FDB1B2B66A8B8 /* Pods-JCWheelView_Tests-acknowledgements.plist */,
+				CFC3C51566AB18EF172539AC /* Pods-JCWheelView_Tests-dummy.m */,
+				6EFB086D9EC4C9DB75DE9869 /* Pods-JCWheelView_Tests-environment.h */,
+				B5CF771D16DCA905F93EF104 /* Pods-JCWheelView_Tests-resources.sh */,
+				6B8AEAFB88B5586452F0A91D /* Pods-JCWheelView_Tests.debug.xcconfig */,
+				342F7B107FAC632BF9CBA34F /* Pods-JCWheelView_Tests.release.xcconfig */,
+			);
+			name = "Pods-JCWheelView_Tests";
+			path = "Target Support Files/Pods-JCWheelView_Tests";
+			sourceTree = "<group>";
+		};
+		9C23474892C12B07DDC44F39 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F7FB32ACA6712CD8F206F521 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EDB20E02BA7F53376DE0143A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D09AF99660F4BC103F47E43 /* JCWheelView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F3557F802B655BC099893DDF /* Pods-JCWheelView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				E2FFE0C9E732B121F6BF0CFB /* Pods-JCWheelView_Example-acknowledgements.markdown */,
+				907E2941A72374C528A6B4E9 /* Pods-JCWheelView_Example-acknowledgements.plist */,
+				111D7A0D0AC3AF82E944A60D /* Pods-JCWheelView_Example-dummy.m */,
+				1237597588C669ED9A74B1D4 /* Pods-JCWheelView_Example-environment.h */,
+				57C56A132E9EA3FAF6375A97 /* Pods-JCWheelView_Example-resources.sh */,
+				89E31D7F0768CDEF0682FD88 /* Pods-JCWheelView_Example.debug.xcconfig */,
+				4DBE06899EFE4B7BC3FB0A81 /* Pods-JCWheelView_Example.release.xcconfig */,
+			);
+			name = "Pods-JCWheelView_Example";
+			path = "Target Support Files/Pods-JCWheelView_Example";
+			sourceTree = "<group>";
+		};
+		F8D6614CFF8DBC7089518517 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3557F802B655BC099893DDF /* Pods-JCWheelView_Example */,
+				9654B96D7EBE44C7A1686C8B /* Pods-JCWheelView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		04A347A635D2755618F28DE4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D49672A616F263352C2BAAE /* JCRotateGestureRecognizer.h in Headers */,
+				8EDD22B2393AA9A906479ADC /* JCWheelCenterView.h in Headers */,
+				B23FF52F921952687CEDA6A9 /* JCWheelItem.h in Headers */,
+				D4357A03C63A9BE5CC4ACC19 /* JCWheelView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1401599D61F25ECF705518AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26B918359D66CE690FDCDB08 /* JCRotateGestureRecognizer.h in Headers */,
+				89B35052D9204EAB2F79C186 /* JCWheelCenterView.h in Headers */,
+				180EC0D8302015219BCB723F /* JCWheelItem.h in Headers */,
+				314B96B79FA029F9E1E523F3 /* JCWheelView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2CB0D37BCC43416F527194A8 /* Pods-JCWheelView_Example-JCWheelView-JCWheelView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C1A8233FA31A9BE00C26F58 /* Build configuration list for PBXNativeTarget "Pods-JCWheelView_Example-JCWheelView-JCWheelView" */;
+			buildPhases = (
+				87006649E33E86C9615D8F22 /* Sources */,
+				92D069EF172DE1CD05CA3CA3 /* Frameworks */,
+				466C6E209732CB5F0CB15442 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-JCWheelView_Example-JCWheelView-JCWheelView";
+			productName = "Pods-JCWheelView_Example-JCWheelView-JCWheelView";
+			productReference = 5C302F47A48779B6F5B3ACF7 /* JCWheelView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		2F17A7785BDF73CCE7A09092 /* Pods-JCWheelView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FDF06017A33464D05B1B0EA /* Build configuration list for PBXNativeTarget "Pods-JCWheelView_Tests" */;
+			buildPhases = (
+				A37FBBEF9980979AD0897ABE /* Sources */,
+				48F0514C07FA2C5D522EF32E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB0AAADBD85BB16A9A147A96 /* PBXTargetDependency */,
+			);
+			name = "Pods-JCWheelView_Tests";
+			productName = "Pods-JCWheelView_Tests";
+			productReference = 69246E74D61166A9FC4E455C /* libPods-JCWheelView_Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5D908A73C09AC86D0D91A4D3 /* Pods-JCWheelView_Tests-JCWheelView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2234324A3962C4B73D5DB6A1 /* Build configuration list for PBXNativeTarget "Pods-JCWheelView_Tests-JCWheelView" */;
+			buildPhases = (
+				3D627E0F441FC13D13D63799 /* Sources */,
+				10874DFE8FF042977BA5A342 /* Frameworks */,
+				04A347A635D2755618F28DE4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D150560A646F4B33F55B898 /* PBXTargetDependency */,
+			);
+			name = "Pods-JCWheelView_Tests-JCWheelView";
+			productName = "Pods-JCWheelView_Tests-JCWheelView";
+			productReference = 026E057F1ADD244CC63A6D25 /* libPods-JCWheelView_Tests-JCWheelView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9AF2E751930A2C255A895A71 /* Pods-JCWheelView_Example-JCWheelView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D7A243BA7B8E4DB1D1D7EDF /* Build configuration list for PBXNativeTarget "Pods-JCWheelView_Example-JCWheelView" */;
+			buildPhases = (
+				F4FB5C195F0020F54208F8A7 /* Sources */,
+				C0E2E40E088DB0A13CDB37AC /* Frameworks */,
+				1401599D61F25ECF705518AC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C47B0EE7D72CEABA7C381D5F /* PBXTargetDependency */,
+			);
+			name = "Pods-JCWheelView_Example-JCWheelView";
+			productName = "Pods-JCWheelView_Example-JCWheelView";
+			productReference = 91EB0F8DDFB04B1660E82252 /* libPods-JCWheelView_Example-JCWheelView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D3F054FE0A27FBDC1B2D1B6C /* Pods-JCWheelView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23D61D9041A449CDC458E0F2 /* Build configuration list for PBXNativeTarget "Pods-JCWheelView_Example" */;
+			buildPhases = (
+				512D945E97B7B919F18A404D /* Sources */,
+				F1C6D12DF377280ABBFD835E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEF3D76554746B64243FC925 /* PBXTargetDependency */,
+			);
+			name = "Pods-JCWheelView_Example";
+			productName = "Pods-JCWheelView_Example";
+			productReference = 9340687C7BD04F74AB4FDBC2 /* libPods-JCWheelView_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D6EB17D5F84F93AF8132BDB6 /* Pods-JCWheelView_Tests-JCWheelView-JCWheelView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D4903090F24836E8712DEB3 /* Build configuration list for PBXNativeTarget "Pods-JCWheelView_Tests-JCWheelView-JCWheelView" */;
+			buildPhases = (
+				A4C20F5641B1233F113F913F /* Sources */,
+				3385D6CB25D950F6E20D286A /* Frameworks */,
+				647632766698C3913E671128 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-JCWheelView_Tests-JCWheelView-JCWheelView";
+			productName = "Pods-JCWheelView_Tests-JCWheelView-JCWheelView";
+			productReference = 1147AC51916E7168E154F437 /* JCWheelView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF1ABC73E252832A7D7E2734 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = ECC3D324CED3D51C705665BC /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3C1321DC9875FA6132A2B8F8;
+			productRefGroup = 52D31D1D13433C2BA73D60E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3F054FE0A27FBDC1B2D1B6C /* Pods-JCWheelView_Example */,
+				9AF2E751930A2C255A895A71 /* Pods-JCWheelView_Example-JCWheelView */,
+				2CB0D37BCC43416F527194A8 /* Pods-JCWheelView_Example-JCWheelView-JCWheelView */,
+				2F17A7785BDF73CCE7A09092 /* Pods-JCWheelView_Tests */,
+				5D908A73C09AC86D0D91A4D3 /* Pods-JCWheelView_Tests-JCWheelView */,
+				D6EB17D5F84F93AF8132BDB6 /* Pods-JCWheelView_Tests-JCWheelView-JCWheelView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		466C6E209732CB5F0CB15442 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D1EA3EAF22BB00150E2BFB3 /* wheel_arrow@2x.png in Resources */,
+				166AB5DD41FD7B5A0DC9700E /* wheel_bg@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		647632766698C3913E671128 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ABB692CF6D02C0B8EB7F874 /* wheel_arrow@2x.png in Resources */,
+				58FE9C99246947D4AF105B7A /* wheel_bg@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D627E0F441FC13D13D63799 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54FACA2451C4CB618307014D /* JCRotateGestureRecognizer.m in Sources */,
+				F38810FCA6ADE51CF5510205 /* JCWheelCenterView.m in Sources */,
+				DA2CE20E3057FCBD417A8580 /* JCWheelItem.m in Sources */,
+				529AFB3527792290EBFBA850 /* JCWheelView.m in Sources */,
+				CCA25A6B84CF6863986B91EF /* Pods-JCWheelView_Tests-JCWheelView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		512D945E97B7B919F18A404D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDFF422D9F9A4374B2EBAF5D /* Pods-JCWheelView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87006649E33E86C9615D8F22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A37FBBEF9980979AD0897ABE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE305E02A8DCA09F981C1BE /* Pods-JCWheelView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C20F5641B1233F113F913F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4FB5C195F0020F54208F8A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B88379CC3B6234FEC9FB10A4 /* JCRotateGestureRecognizer.m in Sources */,
+				3A845A6C45475C3E473BCF84 /* JCWheelCenterView.m in Sources */,
+				D8F94749AB3A360C4016548B /* JCWheelItem.m in Sources */,
+				D58970D8385607324E0AB104 /* JCWheelView.m in Sources */,
+				3F85500BC9898568C7C20CB0 /* Pods-JCWheelView_Example-JCWheelView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D150560A646F4B33F55B898 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JCWheelView_Tests-JCWheelView-JCWheelView";
+			target = D6EB17D5F84F93AF8132BDB6 /* Pods-JCWheelView_Tests-JCWheelView-JCWheelView */;
+			targetProxy = 865CEC9E40ABE40FDAF084C8 /* PBXContainerItemProxy */;
+		};
+		AEF3D76554746B64243FC925 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JCWheelView_Example-JCWheelView";
+			target = 9AF2E751930A2C255A895A71 /* Pods-JCWheelView_Example-JCWheelView */;
+			targetProxy = AF8EB3D15B8C56832385DD9D /* PBXContainerItemProxy */;
+		};
+		C47B0EE7D72CEABA7C381D5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JCWheelView_Example-JCWheelView-JCWheelView";
+			target = 2CB0D37BCC43416F527194A8 /* Pods-JCWheelView_Example-JCWheelView-JCWheelView */;
+			targetProxy = 7405128511DE12B42ECCD367 /* PBXContainerItemProxy */;
+		};
+		EB0AAADBD85BB16A9A147A96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JCWheelView_Tests-JCWheelView";
+			target = 5D908A73C09AC86D0D91A4D3 /* Pods-JCWheelView_Tests-JCWheelView */;
+			targetProxy = 98EFCF40E2E0D223456E0BFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0130D754B68C9323016732F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DBE06899EFE4B7BC3FB0A81 /* Pods-JCWheelView_Example.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0AB653BB9483043A383CA235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A88D5F56542C4D2A330D993 /* Pods-JCWheelView_Example-JCWheelView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JCWheelView_Example-JCWheelView/Pods-JCWheelView_Example-JCWheelView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		12ACD6AB5B096E1D1FBC6D96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B7681A28D41032FF6B50595 /* Pods-JCWheelView_Tests-JCWheelView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JCWheelView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		50FA064D99E1CE36AF68851A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A88D5F56542C4D2A330D993 /* Pods-JCWheelView_Example-JCWheelView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JCWheelView_Example-JCWheelView/Pods-JCWheelView_Example-JCWheelView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		6AA5DF55AC7148309A195073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		740B85DAA5FCEB4C574CE8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B7681A28D41032FF6B50595 /* Pods-JCWheelView_Tests-JCWheelView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JCWheelView_Tests-JCWheelView/Pods-JCWheelView_Tests-JCWheelView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		845770BE8635D793253549B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 342F7B107FAC632BF9CBA34F /* Pods-JCWheelView_Tests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8573070BE9DBDA9EE8C9B6A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C85E01061EB54B33CEF4356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B8AEAFB88B5586452F0A91D /* Pods-JCWheelView_Tests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9FC374C5344951575920195C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B7681A28D41032FF6B50595 /* Pods-JCWheelView_Tests-JCWheelView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JCWheelView_Tests-JCWheelView/Pods-JCWheelView_Tests-JCWheelView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A5A21A7EE71FA74318719015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B7681A28D41032FF6B50595 /* Pods-JCWheelView_Tests-JCWheelView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JCWheelView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		C1CB342704D86FC4E28B4F68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89E31D7F0768CDEF0682FD88 /* Pods-JCWheelView_Example.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C247CFA2C1F14E1E5FE44AE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A88D5F56542C4D2A330D993 /* Pods-JCWheelView_Example-JCWheelView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JCWheelView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C5E380415A4A681B24355897 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A88D5F56542C4D2A330D993 /* Pods-JCWheelView_Example-JCWheelView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JCWheelView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D4903090F24836E8712DEB3 /* Build configuration list for PBXNativeTarget "Pods-JCWheelView_Tests-JCWheelView-JCWheelView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12ACD6AB5B096E1D1FBC6D96 /* Debug */,
+				A5A21A7EE71FA74318719015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2234324A3962C4B73D5DB6A1 /* Build configuration list for PBXNativeTarget "Pods-JCWheelView_Tests-JCWheelView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				740B85DAA5FCEB4C574CE8CA /* Debug */,
+				9FC374C5344951575920195C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23D61D9041A449CDC458E0F2 /* Build configuration list for PBXNativeTarget "Pods-JCWheelView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1CB342704D86FC4E28B4F68 /* Debug */,
+				0130D754B68C9323016732F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FDF06017A33464D05B1B0EA /* Build configuration list for PBXNativeTarget "Pods-JCWheelView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C85E01061EB54B33CEF4356 /* Debug */,
+				845770BE8635D793253549B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C1A8233FA31A9BE00C26F58 /* Build configuration list for PBXNativeTarget "Pods-JCWheelView_Example-JCWheelView-JCWheelView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C247CFA2C1F14E1E5FE44AE6 /* Debug */,
+				C5E380415A4A681B24355897 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D7A243BA7B8E4DB1D1D7EDF /* Build configuration list for PBXNativeTarget "Pods-JCWheelView_Example-JCWheelView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AB653BB9483043A383CA235 /* Debug */,
+				50FA064D99E1CE36AF68851A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECC3D324CED3D51C705665BC /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AA5DF55AC7148309A195073 /* Debug */,
+				8573070BE9DBDA9EE8C9B6A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF1ABC73E252832A7D7E2734 /* Project object */;
+}

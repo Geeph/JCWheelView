@@ -23,8 +23,7 @@
         
         self.image = [UIImage imageNamed:@"wheel_arrow"];
         
-        CGFloat padding = 20.0f;
-        self.touchEeffectiveRect = CGRectMake(padding, padding, frame.size.width - padding*2, frame.size.height - padding*2);
+        self.effectiveRect = CGRectInset(frame, 20.0f, 20.0f);
     }
     
     return self;
@@ -36,7 +35,7 @@
     
     [self.image drawInRect:rect];
     
-    self.bezierPath = [UIBezierPath bezierPathWithOvalInRect:self.touchEeffectiveRect];
+    self.bezierPath = [UIBezierPath bezierPathWithOvalInRect:self.effectiveRect];
 }
 
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event

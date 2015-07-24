@@ -11,6 +11,7 @@
 #define DEGREES_TO_RADIANS(d) ((d) * M_PI / 180)
 #define RADIANS_TO_DEGREES(d) ((d) * 180 / M_PI)
 
+@class JCWheelItem;
 @class JCWheelView;
 @class JCWheelCenterView;
 @protocol JCWheelViewDelegate <NSObject>
@@ -21,13 +22,14 @@
 
 @interface JCWheelView : UIView
 
-@property (nonatomic, assign) CGPoint xxx;
-
 @property (nonatomic, strong) UIImage *image;
 
 @property (nonatomic, strong) JCWheelCenterView *centerView;
 @property (nonatomic, assign, readonly) NSInteger numberOfItems;
 
-@property (nonatomic, assign) id <JCWheelViewDelegate> delegate;
+//After rotating the wheel for locating the selected item
+@property (nonatomic, strong, readonly) JCWheelItem *baseWheelItem;
+
+@property (nonatomic, weak) id<JCWheelViewDelegate> delegate;
 
 @end

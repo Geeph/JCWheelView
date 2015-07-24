@@ -28,59 +28,34 @@
     CGPoint currentLocation = [touch locationInView:self.view];
     CGPoint previousLocation = [touch previousLocationInView:self.view];
     
-    float previousAngle = atan2((previousLocation.y - center.y), (previousLocation.x - center.x));
-    float currentAngle = atan2((currentLocation.y - center.y), (currentLocation.x - center.x));
-    
-    self.rotation = currentAngle - previousAngle;
-    
-    
-    
-    
-    NSLog(@"_______%f,%f,%f,%f", previousAngle, currentAngle, self.rotation, RADIANS_TO_DEGREES(self.rotation));
+    self.degrees = atan2((currentLocation.y - center.y), (currentLocation.x - center.x)) - atan2((previousLocation.y - center.y), (previousLocation.x - center.x));
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
     if(self.state == UIGestureRecognizerStateChanged) {
-        
-        
         JCWheelView *wheelView = (JCWheelView *)self.view;
-        NSLog(@"%@", NSStringFromCGPoint(wheelView.xxx));
-        
-        
-        CGPoint stopPoint = wheelView.xxx;
-        
+
         for (JCWheelItem *itemView in self.view.subviews) {
-            CGPoint touchPoint = [self locationInView:itemView];
+            CGPoint itemViewCenterPoint = CGPointMake(CGRectGetMidX(itemView.bounds), CGRectGetMidY(itemView.bounds));
             
-//            self.view t
+            CGPoint itemCenterPointInWindow = [itemView convertPoint:itemViewCenterPoint toView:nil];
+            CGRect baseWheelItemRectInWindow = [wheelView.baseWheelItem.superview convertRect:wheelView.baseWheelItem.frame toView:nil];
             
-            if (CGPathContainsPoint(itemView.bezierPath.CGPath, NULL, stopPoint, NO)) {
-                NSLog(@"seleted   %ld",(long)itemView.tag);
-                self.rotation = DEGREES_TO_RADIANS(180) + atan2(self.view.transform.a, self.view.transform.b) + atan2(itemView.transform.a, itemView.transform.b);
+            if (CGRectContainsPoint(baseWheelItemRectInWindow, itemCenterPointInWindow)) {
+                CGPoint itemCenterPointInBaseWheelItem = [itemView convertPoint:itemViewCenterPoint toView:wheelView.baseWheelItem];
                 
-                self.seletedIndex = itemView.tag;
-                
-                break;
+                if ([self point:itemCenterPointInBaseWheelItem at:itemView]) {
+                    break;
+                }
             }
         }
-       
-        
-//        NSLog(@"2  %@", NSStringFromCGRect(wheelView.centerView.frame));
-        
-//        NSLog(@"%f, %f, %f", wheelView.centerView.center.y, wheelView.centerView.frame.origin.y, wheelView.centerView.frame.size.height);
-//        CGPoint stopPoint = CGPointMake(150, 100);
-//
     }
     else if(self.state == UIGestureRecognizerStateBegan) {
         for (JCWheelItem *itemView in self.view.subviews) {
             CGPoint touchPoint = [self locationInView:itemView];
             
-            if (CGPathContainsPoint(itemView.bezierPath.CGPath, NULL, touchPoint, NO)) {
-                self.rotation = DEGREES_TO_RADIANS(180) + atan2(self.view.transform.a, self.view.transform.b) + atan2(itemView.transform.a, itemView.transform.b);
-                
-                self.seletedIndex = itemView.tag;
-                
+            if ([self point:touchPoint at:itemView]) {
                 break;
             }
         }
@@ -92,6 +67,21 @@
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
 {
     self.state = UIGestureRecognizerStateCancelled;
+}
+
+#pragma mark - 
+
+-(BOOL)point:(CGPoint)point at:(JCWheelItem *)itemView
+{
+    if (CGPathContainsPoint(itemView.bezierPath.CGPath, NULL, point, NO)) {
+        self.degrees = DEGREES_TO_RADIANS(180) + atan2(self.view.transform.a, self.view.transform.b) + atan2(itemView.transform.a, itemView.transform.b);
+        
+        self.seletedIndex = itemView.tag;
+        
+        return YES;
+    }
+    
+    return NO;
 }
 
 @end

@@ -10,7 +10,7 @@
 
 @interface JCRotateGestureRecognizer : UIGestureRecognizer
 
-@property (nonatomic, assign) CGFloat rotation;
+@property (nonatomic, assign) CGFloat degrees;
 
 @property (nonatomic, assign) NSInteger seletedIndex;
 

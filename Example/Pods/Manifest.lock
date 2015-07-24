@@ -1,0 +1,14 @@
+PODS:
+  - JCWheelView (0.0.1)
+
+DEPENDENCIES:
+  - JCWheelView (from `../`)
+
+EXTERNAL SOURCES:
+  JCWheelView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JCWheelView: 8662148147420f9e2a71afe2b9c00bb0ca81c00d
+
+COCOAPODS: 0.37.2
