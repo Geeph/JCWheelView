@@ -66,10 +66,7 @@
         [self addSubview:item];
     }
     
-    self.baseWheelItem.frame = CGRectOffset(self.baseWheelItem.frame, self.center.x - self.baseWheelItem.frame.size.width/2, self.frame.origin.y);
     [self.superview insertSubview:self.baseWheelItem aboveSubview:self];
-
-    self.centerView.center = CGPointMake(CGRectGetMinX(self.frame) + radius, CGRectGetMinY(self.frame) + radius);
     [self.superview insertSubview:self.centerView aboveSubview:self];
 }
 
@@ -95,6 +92,12 @@
 {
     if (!_baseWheelItem) {
         _baseWheelItem = [[JCWheelItem alloc] initWithWheelView:self];
+        
+        CGRect baseWheelItemFrame = self.baseWheelItem.frame;
+        baseWheelItemFrame.origin.x = (self.frame.size.width - baseWheelItemFrame.size.width)/2 + self.frame.origin.x;
+        baseWheelItemFrame.origin.y = self.frame.origin.y;
+        
+        self.baseWheelItem.frame = baseWheelItemFrame;
     }
     
     return _baseWheelItem;
@@ -104,6 +107,7 @@
 {
     if (!_centerView) {
         _centerView = [[JCWheelCenterView alloc] initWithFrame:CGRectMake(0, 0, 140, 140)];
+        _centerView.center = self.center;
     }
     
     return _centerView;
