@@ -66,6 +66,7 @@
         [self addSubview:item];
     }
     
+    self.baseWheelItem.userInteractionEnabled = NO;
     [self.superview insertSubview:self.baseWheelItem aboveSubview:self];
     [self.superview insertSubview:self.centerView aboveSubview:self];
 }
