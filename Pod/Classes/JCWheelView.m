@@ -42,6 +42,15 @@
     [self addGestureRecognizer:rotateGR];
 }
 
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    CGRect frame = self.frame;
+    frame.size.height = frame.size.width;
+    self.frame = frame;
+}
+
 - (void)drawRect:(CGRect)rect
 {
     [super drawRect:rect];
