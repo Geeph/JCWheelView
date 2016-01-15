@@ -36,7 +36,7 @@
 - (void)setup
 {
     self.backgroundColor = [UIColor clearColor];
-    self.image = [UIImage imageNamed:@"wheel_bg"];
+    _image = [UIImage imageNamed:@"wheel_bg"];
 
     JCRotateGestureRecognizer *rotateGR = [[JCRotateGestureRecognizer alloc] initWithTarget:self action:@selector(handleRotateGesture:)];
     [self addGestureRecognizer:rotateGR];

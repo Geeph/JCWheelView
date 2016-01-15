@@ -21,21 +21,21 @@
 
 - (instancetype)initWithWheelView:(JCWheelView *)wheelView
 {
-    self.radius = wheelView.frame.size.width/2;
-    self.startRadians = DEGREES_TO_RADIANS(270 - ((360/wheelView.numberOfItems)/2));
-    self.endRadians = DEGREES_TO_RADIANS(270 + ((360/wheelView.numberOfItems)/2));
+    _radius = wheelView.frame.size.width/2;
+    _startRadians = DEGREES_TO_RADIANS(270 - ((360/wheelView.numberOfItems)/2));
+    _endRadians = DEGREES_TO_RADIANS(270 + ((360/wheelView.numberOfItems)/2));
     
     CGRect frame = wheelView.bounds;
     
     if (wheelView.numberOfItems > 1) {
-        UIBezierPath *arcPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.radius, self.radius) radius:self.radius startAngle:self.startRadians endAngle:self.endRadians clockwise:YES];
+        UIBezierPath *arcPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(_radius, _radius) radius:_radius startAngle:_startRadians endAngle:_endRadians clockwise:YES];
         
-        frame = CGRectMake(0, 0, arcPath.bounds.size.width, self.radius);
+        frame = CGRectMake(0, 0, arcPath.bounds.size.width, _radius);
     }
     
     if (self = [super initWithFrame:frame]) {
         self.backgroundColor = [UIColor clearColor];
-        self.layer.anchorPoint = CGPointMake(0.5, (self.radius/2)/frame.size.height);
+        self.layer.anchorPoint = CGPointMake(0.5, (_radius/2)/frame.size.height);
     }
     
     return self;

@@ -21,9 +21,9 @@
     if (self = [super initWithFrame:frame]) {
         self.backgroundColor = [UIColor clearColor];
         
-        self.image = [UIImage imageNamed:@"wheel_arrow"];
+        _image = [UIImage imageNamed:@"wheel_arrow"];
         
-        self.effectiveRect = CGRectInset(frame, 20.0f, 20.0f);
+        _effectiveRect = CGRectInset(frame, 20.0f, 20.0f);
     }
     
     return self;
