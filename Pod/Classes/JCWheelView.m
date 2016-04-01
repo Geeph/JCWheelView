@@ -60,6 +60,8 @@
     CGFloat radius = rect.size.height/2;
     CGFloat degrees = 270.0f;//the above is the starting point
     
+    JCWheelItem *selectedItem = nil;
+    
     for (int i = 0; i < self.numberOfItems; i++) {
         JCWheelItem *item = [[JCWheelItem alloc] initWithWheelView:self];
         item.tag = i;
@@ -73,7 +75,18 @@
         degrees += 360/self.numberOfItems;
         
         [self addSubview:item];
+        
+        if (i == self.seletedIndex) {
+            selectedItem = item;
+        }
     }
+    
+    degrees = DEGREES_TO_RADIANS(180) + atan2(self.transform.a, self.transform.b) + atan2(selectedItem.transform.a, selectedItem.transform.b);
+    
+    JCRotateGestureRecognizer *rotateGR = self.gestureRecognizers.firstObject;
+    rotateGR.degrees = degrees;
+    
+    [self performSelector:@selector(handleRotateGesture:) withObject:rotateGR afterDelay:0];
     
     self.baseWheelItem.userInteractionEnabled = NO;
     [self.superview insertSubview:self.baseWheelItem aboveSubview:self];
@@ -82,15 +95,17 @@
 
 - (void)handleRotateGesture:(JCRotateGestureRecognizer *)rotateGR
 {
-    if (rotateGR.state == UIGestureRecognizerStateChanged) {//rotate
+    if (rotateGR.state == UIGestureRecognizerStateChanged) { //rotate
         self.transform = CGAffineTransformRotate(self.transform, rotateGR.degrees);
     }
-    else if(rotateGR.state == UIGestureRecognizerStateEnded) {//tap
-        [UIView animateWithDuration:0.3f animations:^{
+    else if(rotateGR.state == UIGestureRecognizerStateEnded || rotateGR.state == UIGestureRecognizerStatePossible) { //tap or init
+        CGFloat duration = (rotateGR.state == UIGestureRecognizerStateEnded) ? 0.3 : 0.0;
+        
+        [UIView animateWithDuration:duration animations:^{
             self.transform = CGAffineTransformRotate(self.transform, rotateGR.degrees);
         } completion:^(BOOL finished) {
             if ([self.delegate respondsToSelector:@selector(wheelView:didSelectItemAtIndex:)]) {
-                [self.delegate wheelView:self didSelectItemAtIndex:rotateGR.seletedIndex];
+                [self.delegate wheelView:self didSelectItemAtIndex:self.seletedIndex];
             }
         }];
     }

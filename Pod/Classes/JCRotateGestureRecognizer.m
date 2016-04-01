@@ -76,7 +76,9 @@
     if (CGPathContainsPoint(itemView.bezierPath.CGPath, NULL, point, NO)) {
         self.degrees = DEGREES_TO_RADIANS(180) + atan2(self.view.transform.a, self.view.transform.b) + atan2(itemView.transform.a, itemView.transform.b);
         
-        self.seletedIndex = itemView.tag;
+        JCWheelView *wheelView = (JCWheelView *)self.view;
+        
+        wheelView.seletedIndex = itemView.tag;
         
         return YES;
     }

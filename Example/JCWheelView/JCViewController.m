@@ -32,6 +32,7 @@
                     RGB(51, 155, 247), RGB(122, 115, 232), RGB(218, 84, 216), RGB(232, 73, 148)];
     
     self.wheelView.delegate = self;
+    self.wheelView.seletedIndex = 4;
     
     self.colorView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 88, 88)];
     self.colorView.layer.cornerRadius = self.colorView.frame.size.width/2;

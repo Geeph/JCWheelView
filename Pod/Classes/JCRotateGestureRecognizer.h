@@ -12,6 +12,4 @@
 
 @property (nonatomic, assign) CGFloat degrees;
 
-@property (nonatomic, assign) NSInteger seletedIndex;
-
 @end
