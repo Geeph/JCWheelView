@@ -23,40 +23,49 @@
 
 @implementation JCViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.colors = @[RGB(233, 65, 76), RGB(236, 99, 51), RGB(239, 136, 51), RGB(244, 173, 51),
-                    RGB(251, 213, 51), RGB(164, 243, 54), RGB(122, 234, 71), RGB(103, 219, 226),
-                    RGB(51, 155, 247), RGB(122, 115, 232), RGB(218, 84, 216), RGB(232, 73, 148)];
-    
     self.wheelView.delegate = self;
-    self.wheelView.seletedIndex = 4;
-    
-    self.colorView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 88, 88)];
-    self.colorView.layer.cornerRadius = self.colorView.frame.size.width/2;
-    self.colorView.layer.masksToBounds = YES;
-    self.colorView.backgroundColor = self.colors.firstObject;
     
     [self.view addSubview:self.colorView];
 }
 
-- (void)viewWillLayoutSubviews
-{
+- (void)viewWillLayoutSubviews {
     self.colorView.center = CGPointMake(self.wheelView.center.x, self.wheelView.center.y + 3);
 }
 
 #pragma mark - JCWheelViewDelegate
 
-- (NSInteger)numberOfItemsInWheelView:(JCWheelView *)wheelView
-{
-    return 12;
+- (NSInteger)numberOfItemsInWheelView:(JCWheelView *)wheelView {
+    return self.colors.count;
 }
 
-- (void)wheelView:(JCWheelView *)wheelView didSelectItemAtIndex:(NSInteger)index
-{
+- (void)wheelView:(JCWheelView *)wheelView didSelectItemAtIndex:(NSInteger)index {
     self.colorView.backgroundColor = self.colors[index];
+}
+
+#pragma mark - setter/getter
+
+- (UIView *)colorView {
+    if (!_colorView) {
+        _colorView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 88, 88)];
+        _colorView.layer.cornerRadius = self.colorView.frame.size.width/2;
+        _colorView.layer.masksToBounds = YES;
+        _colorView.backgroundColor = self.colors.firstObject;
+    }
+    
+    return _colorView;
+}
+
+- (NSArray *)colors {
+    if (!_colors) {
+        _colors = @[RGB(233, 65, 76), RGB(236, 99, 51), RGB(239, 136, 51), RGB(244, 173, 51),
+                    RGB(251, 213, 51), RGB(164, 243, 54), RGB(122, 234, 71), RGB(103, 219, 226),
+                    RGB(51, 155, 247), RGB(122, 115, 232), RGB(218, 84, 216), RGB(232, 73, 148)];
+    }
+    
+    return _colors;
 }
 
 @end

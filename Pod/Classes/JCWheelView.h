@@ -32,6 +32,6 @@
 
 @property (nonatomic, weak) id<JCWheelViewDelegate> delegate;
 
-@property (nonatomic, assign) NSInteger seletedIndex;
+@property (nonatomic, assign) IBInspectable NSInteger seletedIndex;
 
 @end

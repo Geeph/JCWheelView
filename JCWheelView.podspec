@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "JCWheelView"
-  s.version          = "0.0.7"
+  s.version          = "0.0.8"
   s.summary          = "Support rotation and click event, Support replace image."
   s.homepage         = "http://lijingcheng.github.io/"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.author           = { "lijingcheng" => "bj_lijingcheng@163.com" }
   s.source           = { :git => "https://github.com/lijingcheng/JCWheelView.git", :tag => s.version.to_s }
   s.social_media_url = 'http://weibo.com/lijingcheng1984'
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
   s.resources = ['Pod/Assets/*.png']
   s.source_files = 'Pod/Classes/**/*'

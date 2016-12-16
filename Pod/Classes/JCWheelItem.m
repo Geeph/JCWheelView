@@ -19,8 +19,7 @@
 
 @implementation JCWheelItem
 
-- (instancetype)initWithWheelView:(JCWheelView *)wheelView
-{
+- (instancetype)initWithWheelView:(JCWheelView *)wheelView {
     _radius = wheelView.frame.size.width/2;
     _startRadians = DEGREES_TO_RADIANS(270 - ((360/wheelView.numberOfItems)/2));
     _endRadians = DEGREES_TO_RADIANS(270 + ((360/wheelView.numberOfItems)/2));
@@ -41,8 +40,7 @@
     return self;
 }
 
-- (void)drawRect:(CGRect)rect
-{
+- (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
     
     CGPoint center = CGPointMake(CGRectGetMidX(rect), self.radius);

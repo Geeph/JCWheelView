@@ -16,8 +16,7 @@
 
 @implementation JCWheelCenterView
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
+- (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         self.backgroundColor = [UIColor clearColor];
         
@@ -29,8 +28,7 @@
     return self;
 }
 
-- (void)drawRect:(CGRect)rect
-{
+- (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
     
     [self.image drawInRect:rect];
@@ -38,8 +36,7 @@
     self.bezierPath = [UIBezierPath bezierPathWithOvalInRect:self.effectiveRect];
 }
 
-- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
-{
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
     return CGPathContainsPoint(self.bezierPath.CGPath, NULL, point, NO);
 }
 

@@ -15,8 +15,7 @@
 @synthesize baseWheelItem = _baseWheelItem;
 @synthesize numberOfItems = _numberOfItems;
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder
-{
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
         [self setup];
     }
@@ -24,8 +23,7 @@
     return self;
 }
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
+- (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         [self setup];
     }
@@ -33,8 +31,7 @@
     return self;
 }
 
-- (void)setup
-{
+- (void)setup {
     self.backgroundColor = [UIColor clearColor];
     _image = [UIImage imageNamed:@"wheel_bg"];
 
@@ -42,8 +39,7 @@
     [self addGestureRecognizer:rotateGR];
 }
 
-- (void)layoutSubviews
-{
+- (void)layoutSubviews {
     [super layoutSubviews];
     
     CGRect frame = self.frame;
@@ -51,8 +47,7 @@
     self.frame = frame;
 }
 
-- (void)drawRect:(CGRect)rect
-{
+- (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
     
     [self.image drawInRect:rect];
@@ -93,13 +88,12 @@
     [self.superview insertSubview:self.centerView aboveSubview:self];
 }
 
-- (void)handleRotateGesture:(JCRotateGestureRecognizer *)rotateGR
-{
+- (void)handleRotateGesture:(JCRotateGestureRecognizer *)rotateGR {
     if (rotateGR.state == UIGestureRecognizerStateChanged) { //rotate
         self.transform = CGAffineTransformRotate(self.transform, rotateGR.degrees);
     }
     else if(rotateGR.state == UIGestureRecognizerStateEnded || rotateGR.state == UIGestureRecognizerStatePossible) { //tap or init
-        CGFloat duration = (rotateGR.state == UIGestureRecognizerStateEnded) ? 0.3 : 0.0;
+        CGFloat duration = (rotateGR.state == UIGestureRecognizerStateEnded) ? 0.3f : 0.0f;
         
         [UIView animateWithDuration:duration animations:^{
             self.transform = CGAffineTransformRotate(self.transform, rotateGR.degrees);
@@ -113,8 +107,7 @@
 
 #pragma mark -
 
-- (JCWheelItem *)baseWheelItem
-{
+- (JCWheelItem *)baseWheelItem {
     if (!_baseWheelItem) {
         _baseWheelItem = [[JCWheelItem alloc] initWithWheelView:self];
         
@@ -128,8 +121,7 @@
     return _baseWheelItem;
 }
 
-- (JCWheelCenterView *)centerView
-{
+- (JCWheelCenterView *)centerView {
     if (!_centerView) {
         _centerView = [[JCWheelCenterView alloc] initWithFrame:CGRectMake(0, 0, 140, 140)];
         _centerView.center = self.center;
@@ -138,8 +130,7 @@
     return _centerView;
 }
 
-- (NSInteger)numberOfItems
-{
+- (NSInteger)numberOfItems {
     if ([self.delegate respondsToSelector:@selector(numberOfItemsInWheelView:)]) {
         _numberOfItems = [self.delegate numberOfItemsInWheelView:self];
     }

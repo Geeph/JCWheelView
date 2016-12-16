@@ -1,10 +1,12 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'JCWheelView_Example', :exclusive => true do
+platform :ios, "8.0"
+
+target 'JCWheelView_Example' do
   pod "JCWheelView", :path => "../"
 end
 
-target 'JCWheelView_Tests', :exclusive => true do
+target 'JCWheelView_Tests' do
   pod "JCWheelView", :path => "../"
   
 end
