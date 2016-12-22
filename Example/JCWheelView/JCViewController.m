@@ -29,6 +29,8 @@
     self.wheelView.delegate = self;
     
     [self.view addSubview:self.colorView];
+    
+    NSLog(@"\n\n🍀🍀🍀 The warnings in the console can be ignored, the actual use of lib will not exist. 🍀🍀🍀");
 }
 
 - (void)viewWillLayoutSubviews {
