@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "JCWheelView"
-  s.version          = "0.0.8"
+  s.version          = "1.0.0"
   s.summary          = "Support rotation and click event, Support replace image."
   s.homepage         = "http://lijingcheng.github.io/"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"

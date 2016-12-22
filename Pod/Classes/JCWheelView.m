@@ -7,9 +7,6 @@
 //
 
 #import "JCWheelView.h"
-#import "JCWheelItem.h"
-#import "JCWheelCenterView.h"
-#import "JCRotateGestureRecognizer.h"
 
 @implementation JCWheelView
 @synthesize baseWheelItem = _baseWheelItem;

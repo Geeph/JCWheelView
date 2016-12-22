@@ -2,6 +2,7 @@
 
 [![CI Status](http://img.shields.io/travis/lijingcheng/JCWheelView.svg?style=flat)](https://travis-ci.org/lijingcheng/JCWheelView)
 [![Version](https://img.shields.io/cocoapods/v/JCWheelView.svg?style=flat)](http://cocoapods.org/pods/JCWheelView)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/JCWheelView.svg?style=flat)](http://cocoapods.org/pods/JCWheelView)
 [![Platform](https://img.shields.io/cocoapods/p/JCWheelView.svg?style=flat)](http://cocoapods.org/pods/JCWheelView)
 

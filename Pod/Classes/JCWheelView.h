@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+// for Carthage
+#import "JCRotateGestureRecognizer.h"
+#import "JCWheelCenterView.h"
+#import "JCWheelItem.h"
+
 #define DEGREES_TO_RADIANS(d) ((d) * M_PI / 180)
 #define RADIANS_TO_DEGREES(d) ((d) * 180 / M_PI)
 

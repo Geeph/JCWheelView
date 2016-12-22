@@ -23,6 +23,18 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		CF6F86993412472AEF887E2D /* libPods-JCWheelView_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B56D2D005C5BF4DD5F5048 /* libPods-JCWheelView_Tests.a */; };
+		F316C20E1E0BC023006375AE /* JCWheelView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F316C2071E0BC023006375AE /* JCWheelView.framework */; };
+		F316C20F1E0BC023006375AE /* JCWheelView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F316C2071E0BC023006375AE /* JCWheelView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F316C2241E0BC0CE006375AE /* JCRotateGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = F316C2201E0BC0CE006375AE /* JCRotateGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F316C2251E0BC0CE006375AE /* JCWheelCenterView.h in Headers */ = {isa = PBXBuildFile; fileRef = F316C2211E0BC0CE006375AE /* JCWheelCenterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F316C2261E0BC0CE006375AE /* JCWheelItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F316C2221E0BC0CE006375AE /* JCWheelItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F316C2271E0BC0CE006375AE /* JCWheelView.h in Headers */ = {isa = PBXBuildFile; fileRef = F316C2231E0BC0CE006375AE /* JCWheelView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F316C22A1E0BC0DC006375AE /* wheel_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F316C2281E0BC0DC006375AE /* wheel_arrow@2x.png */; };
+		F316C22B1E0BC0DC006375AE /* wheel_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F316C2291E0BC0DC006375AE /* wheel_bg@2x.png */; };
+		F316C2301E0BC0ED006375AE /* JCRotateGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = F316C22C1E0BC0ED006375AE /* JCRotateGestureRecognizer.m */; };
+		F316C2311E0BC0ED006375AE /* JCWheelCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F316C22D1E0BC0ED006375AE /* JCWheelCenterView.m */; };
+		F316C2321E0BC0ED006375AE /* JCWheelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F316C22E1E0BC0ED006375AE /* JCWheelItem.m */; };
+		F316C2331E0BC0ED006375AE /* JCWheelView.m in Sources */ = {isa = PBXBuildFile; fileRef = F316C22F1E0BC0ED006375AE /* JCWheelView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +45,28 @@
 			remoteGlobalIDString = 6003F589195388D20070C39A;
 			remoteInfo = JCWheelView;
 		};
+		F316C20C1E0BC023006375AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F316C2061E0BC023006375AE;
+			remoteInfo = JCWheelView;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F316C2131E0BC023006375AE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F316C20F1E0BC023006375AE /* JCWheelView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00CC92766986D2C9089F788F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -65,6 +98,19 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A28828CA9A416E2853E0C2CC /* Pods-JCWheelView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCWheelView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCWheelView_Example/Pods-JCWheelView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EF48BDB2DA1223C05842BFA0 /* Pods-JCWheelView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCWheelView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCWheelView_Example/Pods-JCWheelView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F316C2071E0BC023006375AE /* JCWheelView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JCWheelView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F316C2091E0BC023006375AE /* JCWheelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCWheelView.h; sourceTree = "<group>"; };
+		F316C20A1E0BC023006375AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F316C2201E0BC0CE006375AE /* JCRotateGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JCRotateGestureRecognizer.h; path = ../Pod/Classes/JCRotateGestureRecognizer.h; sourceTree = "<group>"; };
+		F316C2211E0BC0CE006375AE /* JCWheelCenterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JCWheelCenterView.h; path = ../Pod/Classes/JCWheelCenterView.h; sourceTree = "<group>"; };
+		F316C2221E0BC0CE006375AE /* JCWheelItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JCWheelItem.h; path = ../Pod/Classes/JCWheelItem.h; sourceTree = "<group>"; };
+		F316C2231E0BC0CE006375AE /* JCWheelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JCWheelView.h; path = ../Pod/Classes/JCWheelView.h; sourceTree = "<group>"; };
+		F316C2281E0BC0DC006375AE /* wheel_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wheel_arrow@2x.png"; path = "../Pod/Assets/wheel_arrow@2x.png"; sourceTree = "<group>"; };
+		F316C2291E0BC0DC006375AE /* wheel_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wheel_bg@2x.png"; path = "../Pod/Assets/wheel_bg@2x.png"; sourceTree = "<group>"; };
+		F316C22C1E0BC0ED006375AE /* JCRotateGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JCRotateGestureRecognizer.m; path = ../Pod/Classes/JCRotateGestureRecognizer.m; sourceTree = "<group>"; };
+		F316C22D1E0BC0ED006375AE /* JCWheelCenterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JCWheelCenterView.m; path = ../Pod/Classes/JCWheelCenterView.m; sourceTree = "<group>"; };
+		F316C22E1E0BC0ED006375AE /* JCWheelItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JCWheelItem.m; path = ../Pod/Classes/JCWheelItem.m; sourceTree = "<group>"; };
+		F316C22F1E0BC0ED006375AE /* JCWheelView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JCWheelView.m; path = ../Pod/Classes/JCWheelView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F316C20E1E0BC023006375AE /* JCWheelView.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -87,6 +134,13 @@
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
 				CF6F86993412472AEF887E2D /* libPods-JCWheelView_Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F316C2031E0BC023006375AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,9 +161,11 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				F316C1EE1E0BBFD3006375AE /* For Carthage */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for JCWheelView */,
 				6003F5B5195388D20070C39A /* Tests */,
+				F316C2081E0BC023006375AE /* JCWheelView */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				0D5B5FA820892238F5ACCDE9 /* Pods */,
@@ -121,6 +177,7 @@
 			children = (
 				6003F58A195388D20070C39A /* JCWheelView_Example.app */,
 				6003F5AE195388D20070C39A /* JCWheelView_Tests.xctest */,
+				F316C2071E0BC023006375AE /* JCWheelView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,7 +250,47 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		F316C1EE1E0BBFD3006375AE /* For Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				F316C2201E0BC0CE006375AE /* JCRotateGestureRecognizer.h */,
+				F316C22C1E0BC0ED006375AE /* JCRotateGestureRecognizer.m */,
+				F316C2211E0BC0CE006375AE /* JCWheelCenterView.h */,
+				F316C22D1E0BC0ED006375AE /* JCWheelCenterView.m */,
+				F316C2221E0BC0CE006375AE /* JCWheelItem.h */,
+				F316C22E1E0BC0ED006375AE /* JCWheelItem.m */,
+				F316C2231E0BC0CE006375AE /* JCWheelView.h */,
+				F316C22F1E0BC0ED006375AE /* JCWheelView.m */,
+				F316C2281E0BC0DC006375AE /* wheel_arrow@2x.png */,
+				F316C2291E0BC0DC006375AE /* wheel_bg@2x.png */,
+			);
+			name = "For Carthage";
+			sourceTree = "<group>";
+		};
+		F316C2081E0BC023006375AE /* JCWheelView */ = {
+			isa = PBXGroup;
+			children = (
+				F316C2091E0BC023006375AE /* JCWheelView.h */,
+				F316C20A1E0BC023006375AE /* Info.plist */,
+			);
+			path = JCWheelView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F316C2041E0BC023006375AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F316C2241E0BC0CE006375AE /* JCRotateGestureRecognizer.h in Headers */,
+				F316C2251E0BC0CE006375AE /* JCWheelCenterView.h in Headers */,
+				F316C2261E0BC0CE006375AE /* JCWheelItem.h in Headers */,
+				F316C2271E0BC0CE006375AE /* JCWheelView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		6003F589195388D20070C39A /* JCWheelView_Example */ = {
@@ -206,10 +303,12 @@
 				6003F588195388D20070C39A /* Resources */,
 				F5371C9CF9267F4C0932378E /* [CP] Embed Pods Frameworks */,
 				0BB87C2674CFBC79D8D3838C /* [CP] Copy Pods Resources */,
+				F316C2131E0BC023006375AE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F316C20D1E0BC023006375AE /* PBXTargetDependency */,
 			);
 			name = JCWheelView_Example;
 			productName = JCWheelView;
@@ -237,6 +336,24 @@
 			productReference = 6003F5AE195388D20070C39A /* JCWheelView_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F316C2061E0BC023006375AE /* JCWheelView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F316C2101E0BC023006375AE /* Build configuration list for PBXNativeTarget "JCWheelView" */;
+			buildPhases = (
+				F316C2021E0BC023006375AE /* Sources */,
+				F316C2031E0BC023006375AE /* Frameworks */,
+				F316C2041E0BC023006375AE /* Headers */,
+				F316C2051E0BC023006375AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JCWheelView;
+			productName = JCWheelView;
+			productReference = F316C2071E0BC023006375AE /* JCWheelView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -249,6 +366,10 @@
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
+					};
+					F316C2061E0BC023006375AE = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -267,6 +388,7 @@
 			targets = (
 				6003F589195388D20070C39A /* JCWheelView_Example */,
 				6003F5AD195388D20070C39A /* JCWheelView_Tests */,
+				F316C2061E0BC023006375AE /* JCWheelView */,
 			);
 		};
 /* End PBXProject section */
@@ -287,6 +409,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F316C2051E0BC023006375AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F316C22A1E0BC0DC006375AE /* wheel_arrow@2x.png in Resources */,
+				F316C22B1E0BC0DC006375AE /* wheel_bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +535,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F316C2021E0BC023006375AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F316C2301E0BC0ED006375AE /* JCRotateGestureRecognizer.m in Sources */,
+				F316C2311E0BC0ED006375AE /* JCWheelCenterView.m in Sources */,
+				F316C2321E0BC0ED006375AE /* JCWheelItem.m in Sources */,
+				F316C2331E0BC0ED006375AE /* JCWheelView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -411,6 +553,11 @@
 			isa = PBXTargetDependency;
 			target = 6003F589195388D20070C39A /* JCWheelView_Example */;
 			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+		};
+		F316C20D1E0BC023006375AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F316C2061E0BC023006375AE /* JCWheelView */;
+			targetProxy = F316C20C1E0BC023006375AE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -526,6 +673,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JCWheelView/JCWheelView-Prefix.pch";
 				INFOPLIST_FILE = "JCWheelView/JCWheelView-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -542,6 +690,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JCWheelView/JCWheelView-Prefix.pch";
 				INFOPLIST_FILE = "JCWheelView/JCWheelView-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -593,6 +742,57 @@
 			};
 			name = Release;
 		};
+		F316C2111E0BC023006375AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = JCWheelView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ljc.JCWheelView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F316C2121E0BC023006375AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = JCWheelView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ljc.JCWheelView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -622,6 +822,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		F316C2101E0BC023006375AE /* Build configuration list for PBXNativeTarget "JCWheelView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F316C2111E0BC023006375AE /* Debug */,
+				F316C2121E0BC023006375AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
