@@ -99,18 +99,17 @@
 		A28828CA9A416E2853E0C2CC /* Pods-JCWheelView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCWheelView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCWheelView_Example/Pods-JCWheelView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EF48BDB2DA1223C05842BFA0 /* Pods-JCWheelView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCWheelView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCWheelView_Example/Pods-JCWheelView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F316C2071E0BC023006375AE /* JCWheelView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JCWheelView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F316C2091E0BC023006375AE /* JCWheelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCWheelView.h; sourceTree = "<group>"; };
 		F316C20A1E0BC023006375AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F316C2201E0BC0CE006375AE /* JCRotateGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JCRotateGestureRecognizer.h; path = ../Pod/Classes/JCRotateGestureRecognizer.h; sourceTree = "<group>"; };
-		F316C2211E0BC0CE006375AE /* JCWheelCenterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JCWheelCenterView.h; path = ../Pod/Classes/JCWheelCenterView.h; sourceTree = "<group>"; };
-		F316C2221E0BC0CE006375AE /* JCWheelItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JCWheelItem.h; path = ../Pod/Classes/JCWheelItem.h; sourceTree = "<group>"; };
-		F316C2231E0BC0CE006375AE /* JCWheelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JCWheelView.h; path = ../Pod/Classes/JCWheelView.h; sourceTree = "<group>"; };
-		F316C2281E0BC0DC006375AE /* wheel_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wheel_arrow@2x.png"; path = "../Pod/Assets/wheel_arrow@2x.png"; sourceTree = "<group>"; };
-		F316C2291E0BC0DC006375AE /* wheel_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wheel_bg@2x.png"; path = "../Pod/Assets/wheel_bg@2x.png"; sourceTree = "<group>"; };
-		F316C22C1E0BC0ED006375AE /* JCRotateGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JCRotateGestureRecognizer.m; path = ../Pod/Classes/JCRotateGestureRecognizer.m; sourceTree = "<group>"; };
-		F316C22D1E0BC0ED006375AE /* JCWheelCenterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JCWheelCenterView.m; path = ../Pod/Classes/JCWheelCenterView.m; sourceTree = "<group>"; };
-		F316C22E1E0BC0ED006375AE /* JCWheelItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JCWheelItem.m; path = ../Pod/Classes/JCWheelItem.m; sourceTree = "<group>"; };
-		F316C22F1E0BC0ED006375AE /* JCWheelView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JCWheelView.m; path = ../Pod/Classes/JCWheelView.m; sourceTree = "<group>"; };
+		F316C2201E0BC0CE006375AE /* JCRotateGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JCRotateGestureRecognizer.h; path = ../../Pod/Classes/JCRotateGestureRecognizer.h; sourceTree = "<group>"; };
+		F316C2211E0BC0CE006375AE /* JCWheelCenterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JCWheelCenterView.h; path = ../../Pod/Classes/JCWheelCenterView.h; sourceTree = "<group>"; };
+		F316C2221E0BC0CE006375AE /* JCWheelItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JCWheelItem.h; path = ../../Pod/Classes/JCWheelItem.h; sourceTree = "<group>"; };
+		F316C2231E0BC0CE006375AE /* JCWheelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JCWheelView.h; path = ../../Pod/Classes/JCWheelView.h; sourceTree = "<group>"; };
+		F316C2281E0BC0DC006375AE /* wheel_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wheel_arrow@2x.png"; path = "../../Pod/Assets/wheel_arrow@2x.png"; sourceTree = "<group>"; };
+		F316C2291E0BC0DC006375AE /* wheel_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wheel_bg@2x.png"; path = "../../Pod/Assets/wheel_bg@2x.png"; sourceTree = "<group>"; };
+		F316C22C1E0BC0ED006375AE /* JCRotateGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JCRotateGestureRecognizer.m; path = ../../Pod/Classes/JCRotateGestureRecognizer.m; sourceTree = "<group>"; };
+		F316C22D1E0BC0ED006375AE /* JCWheelCenterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JCWheelCenterView.m; path = ../../Pod/Classes/JCWheelCenterView.m; sourceTree = "<group>"; };
+		F316C22E1E0BC0ED006375AE /* JCWheelItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JCWheelItem.m; path = ../../Pod/Classes/JCWheelItem.m; sourceTree = "<group>"; };
+		F316C22F1E0BC0ED006375AE /* JCWheelView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JCWheelView.m; path = ../../Pod/Classes/JCWheelView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,11 +160,10 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
-				F316C1EE1E0BBFD3006375AE /* For Carthage */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for JCWheelView */,
 				6003F5B5195388D20070C39A /* Tests */,
-				F316C2081E0BC023006375AE /* JCWheelView */,
+				F316C2081E0BC023006375AE /* JCWheelView for Carthage */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				0D5B5FA820892238F5ACCDE9 /* Pods */,
@@ -250,7 +248,7 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		F316C1EE1E0BBFD3006375AE /* For Carthage */ = {
+		F316C2081E0BC023006375AE /* JCWheelView for Carthage */ = {
 			isa = PBXGroup;
 			children = (
 				F316C2201E0BC0CE006375AE /* JCRotateGestureRecognizer.h */,
@@ -263,16 +261,9 @@
 				F316C22F1E0BC0ED006375AE /* JCWheelView.m */,
 				F316C2281E0BC0DC006375AE /* wheel_arrow@2x.png */,
 				F316C2291E0BC0DC006375AE /* wheel_bg@2x.png */,
-			);
-			name = "For Carthage";
-			sourceTree = "<group>";
-		};
-		F316C2081E0BC023006375AE /* JCWheelView */ = {
-			isa = PBXGroup;
-			children = (
-				F316C2091E0BC023006375AE /* JCWheelView.h */,
 				F316C20A1E0BC023006375AE /* Info.plist */,
 			);
+			name = "JCWheelView for Carthage";
 			path = JCWheelView;
 			sourceTree = "<group>";
 		};
@@ -830,6 +821,7 @@
 				F316C2121E0BC023006375AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
