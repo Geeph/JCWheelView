@@ -23,6 +23,7 @@ Installation with Carthage
 ```
 github "lijingcheng/JCWheelView" ~> 1.0.0
 ```
+Take care that wheel_arrow@2x.png and Wheel_bg@2x.png is added to Targets->Build Phases->Copy Bundle Resources
 
 ## Usage
 
