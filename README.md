@@ -12,7 +12,17 @@ Support rotation and click event, Support replace image.
 
 ## Installation
 
-pod "JCWheelView"
+Installation with CocoaPods
+
+```
+pod "JCWheelView", "1.0.0"
+```
+
+Installation with Carthage
+
+```
+github "lijingcheng/JCWheelView" ~> 1.0.0
+```
 
 ## Usage
 
